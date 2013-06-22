@@ -1,0 +1,65 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta charset="utf-8">
+<link href="http://fonts.googleapis.com/css?family=Patrick+Hand&subset=latin,latin-ext" rel="stylesheet" type="text/css"/>
+<style type="text/css">
+#img {
+	position: absolute;
+	width: 960px;
+	height: 640px;
+	left: 16px;
+	top: 16px;
+}
+div {
+	position: absolute;
+	font-family: 'Patrick Hand', cursive;
+	text-align: center;
+	font-size: 30px;
+}
+#bub1 {
+	left: 40px;
+	top: 32px;
+	width: 280px;
+	height: 190px;
+}
+#bub2 {
+	left: 350px;
+	top: 100px;
+	width: 250px;
+	height: 150px;
+}
+#bub3 {
+	left: 780px;
+	top: 130px;
+	width: 160px;
+	height: 120px;
+	line-height: 120px;
+}
+</style>
+<script type="text/javascript">
+function rnd(items) {
+	return items[Math.floor(Math.random()*items.length)];
+}
+function randomhack()
+{
+	var s1 = new Array("Už to mám!", "Počujte decka!");
+	var s2 = new Array("Poďme hackovať", "Rozbehnime projekt", "Vyrobme si");
+	var s3 = new Array("open-source", "platený", "vegánsky", "programovateľný");
+	var s4 = new Array("dotykový", "samoreplikovací", "cyberpunkový", "steampunkový", "anarchistický", "futuristický");
+	var s5 = new Array("mikrokontrolér", "vaporizér", "bicykel", "bidet", "mozog", "automobil");
+	var sar = new Array("To už bolo na Hack&#8209a&#8209Day", "Sa nedivím, že si furt sám", "Tak určitéééé", "Z toho musíme spraviť kit", "To je popiči nápad");
+	var btr = new Array("wub-wub-wub", "ceckyyy!", "4chaaan", "jebe na hlavu", "apinaaa", "to je na piču", "hipster alert", "easy as fuck", "fuck this shit");
+	document.getElementById('bub1').innerHTML = rnd(s1) + "<br/>" + rnd(s2) + " " + rnd(s3) + " " + rnd(s4) + " " + rnd(s5) + "!";
+	document.getElementById('bub2').innerHTML = rnd(sar) + ".";
+	document.getElementById('bub3').innerHTML = rnd(btr);
+}
+</script>
+</head>
+<body onload="randomhack();">
+<img id="img" src="hacking.jpg"/>
+<div id="bub1"></div>
+<div id="bub2"></div>
+<div id="bub3"></div>
+</body>
+</html>
