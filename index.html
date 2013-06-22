@@ -4,6 +4,14 @@
 <meta charset="utf-8">
 <link href="http://fonts.googleapis.com/css?family=Patrick+Hand&subset=latin,latin-ext" rel="stylesheet" type="text/css"/>
 <style type="text/css">
+body {
+	background: #000;
+	color: #888;
+	font-size: 0.9em;
+}
+a {
+	color: #0ff;
+}
 #img {
 	position: absolute;
 	width: 960px;
@@ -16,11 +24,12 @@ div.bub {
 	font-family: 'Patrick Hand', cursive;
 	text-align: center;
 	font-size: 30px;
+	color: #000;
 }
 #bub1 {
-	left: 34px;
+	left: 38px;
 	top: 30px;
-	width: 290px;
+	width: 282px;
 	height: 190px;
 }
 #bub2 {
@@ -30,9 +39,9 @@ div.bub {
 	height: 150px;
 }
 #bub3 {
-	left: 770px;
+	left: 740px;
 	top: 130px;
-	width: 180px;
+	width: 200px;
 	height: 120px;
 	line-height: 120px;
 }
@@ -56,7 +65,7 @@ function randomhack()
 	var s6 = new Array("na baterky", "naplnený LSD", "pre tehotné ženy", "na diaľkové ovládanie", "na vesmírnu energiu");
 	var sar = new Array("To už bolo na Hack&#8209a&#8209Day", "Sa nedivím, že si furt sám", "Tak určitéééé", "Z toho musíme spraviť kit", "To je popiči nápad", "To potom vezmeme na Freezefest", "Myslím, že to preháňaš s Club Mate", "Už sa teším na workshop", "To by chcelo lightning talk");
 	var btr = new Array("wub-wub-wub", "ceckyyy!", "4chaaan", "jebe na hlavu", "apinaaa", "to je na piču", "hipster alert", "easy as fuck", "fuck this shit", "to nebudu dělat", "fap-fap-fap");
-	document.getElementById('bub1').innerHTML = rnd(s1) + "<br/>" + rnd(s2) + " " + rnd(s3) + " " + rnd(s4) + " " + rnd(s5) + " " + rnd(s6) + "!";
+	document.getElementById('bub1').innerHTML = rnd(s1) + " " + rnd(s2) + " " + rnd(s3) + " " + rnd(s4) + " " + rnd(s5) + " " + rnd(s6) + "!";
 	document.getElementById('bub2').innerHTML = rnd(sar) + ".";
 	document.getElementById('bub3').innerHTML = rnd(btr);
 }
